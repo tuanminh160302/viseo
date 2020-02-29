@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/logo1.jpg" alt="">
+        <div id="tabs">
+            <p id="home">HOME</p>
+            <p id="pg">PHOTO GALLERY</p>
+            <p id="events">EVENTS</p>
+            <p id="contacts">CONTACTS</p>
+            <div id="search-icon"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="panel1">
+            <h1>ViSEO</h1>
+            <a id="action" href="#">
+                <div class="button-fill grey">
+                    <div class="button-text">Learn More</div>
+                    <div class="button-inside">
+                        <div class="inside-text">Learn&nbspMore</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="panel2">
+            <img id="homepic" src="img/logo1.jpg" alt="">
+            <p id="slogan">Some great line about viseo and how we did something everyone is going to love</p>
+            <div class="box"></div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+        document.getElementById('action').addEventListener('click', function () {
+
+
+            TweenMax.to('.panel2', 1.8, { scaleY: 1, height: '90vh', ease: Circ.easeOut });
+            TweenMax.to('.panel2', .5, { backgroundColor: '#bdbdbd'});
+            TweenMax.to('.panel2', .5, { delay: 1.8, backgroundColor: '#1a172a'});
+            TweenMax.to('#homepic', 1.2, { opacity: 1, y: 0, delay: 0.65, ease: Back.easeOut.config(1.7)});
+            TweenMax.to('#slogan', .4, { opacity: 1, y: 20, delay: 1.4 });
+            TweenMax.to('#slogan', 0.5, { color: '#eaeaea', delay: 1.8 });
+            TweenMax.to('.box', 2.3, { opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
+            TweenMax.to('h1', 0.8, { x: 0});
+            TweenMax.to('h1', .5, { delay: 1.8, color: '#eaeaea'});
+            TweenMax.to('#action', 0.8, { x: 0});
+            TweenMax.to('header', .5, { delay: 1.8, backgroundColor:'#1a172a'});
+            TweenMax.to('.container', .5, { delay: 1.8, backgroundColor:'#1a172a'});
+            TweenMax.to('.container', .5, { backgroundColor:'#bdbdbd'});
+            TweenMax.to('#tabs', .5, { delay:1.8, color:'#eaeaea'});
+            TweenMax.to('header', .5, { backgroundColor: '#bdbdbd'});
+            TweenMax.to('.button-fill.grey', .8, { delay: 3, background: '#1a172a' });
+            TweenMax.to('.button-fill.grey', .8, { delay: 3, color: '#1a172a' });
+            TweenMax.to('.button-inside', .8, { delay: 3, background: '#1a172a'});
+            TweenMax.to('.button-inside', .8, { delay: 3, color: '#1a172a'});
+            TweenMax.to('#action', 0, {delay: 4, visibility: 'hidden' })
+            TweenMax.to('h1', 0.8, { delay: 4, y: '10vh'});
+        })
+    </script>
+
+    <script>
+        $(".button-fill").hover(function () {
+            $(this).children(".button-inside").addClass('full');
+        }, function () {
+            $(this).children(".button-inside").removeClass('full');
+        });
+    </script>
+
+</body>
+
+</html>
