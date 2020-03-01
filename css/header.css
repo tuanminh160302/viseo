@@ -26,9 +26,11 @@ header > #tabs {
     margin-right: 3vw;
 }
 
-#tabs > p {
+#tabs > a {
     margin: 0 auto;
     cursor: pointer;
+    text-decoration: none;
+    color: #eaeaea;
 }
 
 .stickyHeader {

@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 90vh;
-    background: linear-gradient(to bottom, orange, #1a172a);
+    height: 100vh;
+    /* background: linear-gradient(to bottom, orange, #1a172a); */
+    background: #f9b233;
     z-index: -1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -20,7 +21,7 @@
     height: 100vh;
     /* background: linear-gradient(to bottom, #1a172a, orange); */
     z-index: -1;
-    background: red;
+    background: #1a172a;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: top;

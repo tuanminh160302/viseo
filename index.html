@@ -14,12 +14,12 @@
 
 <body>
     <header class="header" id="myHeader">
-        <img id="logo" src="img/logo1.jpg" alt="">
+        <img id="logo" src="img/logo2.png" alt="">
         <div id="tabs">
-            <p id="home">HOME</p>
-            <p id="pg">PHOTO GALLERY</p>
-            <p id="events">EVENTS</p>
-            <p id="contacts">CONTACTS</p>
+            <a href="index.html" id="home">HOME</a>
+            <a id="pg">GALLERY</a>
+            <a id="events">EVENTS</a>
+            <a id="contacts">CONTACTS</a>
             <div id="search-icon"></div>
         </div>
     </header>
@@ -49,13 +49,13 @@
             </a>
         </div>
         <div class="panel2">
-            <img id="homepic" src="img/logo1.jpg" alt="">
+            <img id="homepic" src="img/logo2.png" alt="">
             <p id="slogan">Some great line about viseo and how we did something everyone is going to love</p>
             <div class="box"></div>
         </div>
 
     <div id="viewmore">
-        <a id="question" href="#" onclick="return false">What do we have?</a>
+        <a id="question" href="#" onclick="return false">Explore Gallery</a>
     </div>
 
     </div>
@@ -71,13 +71,12 @@
         document.getElementById('action').addEventListener('click', function () {
 
 
-            TweenMax.to('.panel2', 1.8, { scaleY: 1, height: '90vh', ease: Circ.easeOut });
+            TweenMax.to('.panel2', 1.8, { delay: 0.8, scaleY: 1, height: '90vh', ease: Circ.easeOut });
             TweenMax.to('.panel2', .5, { backgroundColor: '#172334' });
             TweenMax.to('.panel2', .5, { delay: 0.4, backgroundColor: '#1a172a' });
-            TweenMax.to('#homepic', 1.2, { opacity: 1, y: 0, delay: 0.65, ease: Back.easeOut.config(1.7) });
-            TweenMax.to('#slogan', .4, { opacity: 1, y: 20, delay: 1.4 });
-            TweenMax.to('#slogan', 0.5, { color: '#eaeaea', delay: 1.8 });
-            TweenMax.to('.box', 2.3, { opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
+            TweenMax.to('#homepic', 1.2, { opacity: 1, y: 0, delay: 1.45, ease: Back.easeOut.config(1.7) });
+            TweenMax.to('#slogan', .4, { opacity: 1, y: 20, delay: 2.2 });
+            TweenMax.to('.box', 3, { opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3) });
             TweenMax.to('h1', 0.8, { x: 0 });
             // TweenMax.to('h1', .5, { delay: 1.8, color: '#eaeaea'});
             TweenMax.to('#action', 0.8, { x: 0 });
@@ -86,26 +85,30 @@
             TweenMax.to('.container', .5, { backgroundColor: '#172334' });
             // TweenMax.to('#tabs', .5, { delay:1.8, color:'#eaeaea'});
             TweenMax.to('header', .5, { backgroundColor: '#172334' });
-            TweenMax.to('.button-fill.grey', .8, { delay: 1, background: '#1a172a' });
-            TweenMax.to('.button-fill.grey', .8, { delay: 1, color: '#1a172a' });
-            TweenMax.to('.button-inside', .8, { delay: 1, background: '#1a172a' });
-            TweenMax.to('.button-inside', .8, { delay: 1, color: '#1a172a' });
-            TweenMax.to('#action', 0, { delay: 1.5, visibility: 'hidden' })
-            TweenMax.to('h1', 0.8, { delay: 1.5, y: '10vh' });
-            TweenMax.to('#viewmore', 1.2, { delay: 3, opacity: 1, y: 0, ease: Bounce.easeOut });
+            TweenMax.to('.button-fill.grey', .5, { background: '#1a172a' });
+            TweenMax.to('.button-fill.grey', .5, { color: '#1a172a' });
+            TweenMax.to('.button-inside', .5, { background: '#1a172a' });
+            TweenMax.to('.button-inside', .5, { color: '#1a172a' });
+            TweenMax.to('#action', 0, { visibility: 'hidden' })
+            TweenMax.to('h1', 0.8, { y: '10vh' });
+            TweenMax.to('#viewmore', 1.2, { delay: 3.3, opacity: 1, y: 0, ease: Bounce.easeOut });
         })
 
         document.getElementById('question').addEventListener('click', function () {
-            TweenMax.to('#viewmore', 0.1, { y: '10vh' });
-            TweenMax.to('#viewmore', 0, { delay: .1, display: 'none' });
-            TweenMax.to('.curtain', .7, { delay: 0.4, zIndex: '11', scaleY: 1, ease: Power4.easeOut});
+            TweenMax.to('#viewmore', 0.1, { y: '8vh' });
+            TweenMax.to('#viewmore', 0, { delay: .05, display: 'none' });
+            TweenMax.to('.curtain', .7, { delay: 0.25, zIndex: '11', scaleY: 1, ease: Power4.easeOut});
             TweenMax.to('.curtain', .7, { height: '100vh'});
             TweenMax.to('.container', 0, { height: '100vh'});
             TweenMax.to('.header', 0, {display: 'none'});
             TweenMax.to('.panel1', 0, { display: 'none'});
             TweenMax.to('.panel2', 0, { display: 'none'});
             TweenMax.to('.curtain2', 0, {zIndex: '12'});
-            TweenMax.to('.curtain2', .7, { delay: 1.2, scaleY: 1, ease: Power4.easeOut});
+            TweenMax.to('.curtain2', 1.3, { delay: 1.5, scaleY: 1, ease: Power4.easeOut});
+            TweenMax.to('.curtain', 0, {delay: 2.3, zIndex: '-1'});
+            TweenMax.to('.container', 0, { delay: 1.2, display: 'none'});
+            TweenMax.to('.header', 0, { delay: 1.5, display: 'flex'})
+            TweenMax.to('.skw-pages', 1.5, { delay: 2.1, opacity: 1});
         })
     </script>
 
@@ -131,7 +134,7 @@
             <div class="skw-page__half skw-page__half--right">
                 <div class="skw-page__skewed">
                     <div class="skw-page__content">
-                        <h2 class="skw-page__heading">Skewed One Page Scroll</h2>
+                        <h2 class="skw-page__heading">&#34; 2019 Tự Tình &#34;</h2>
                         <p class="skw-page__description">Just scroll down</p>
                     </div>
                 </div>
@@ -141,7 +144,7 @@
             <div class="skw-page__half skw-page__half--left">
                 <div class="skw-page__skewed">
                     <div class="skw-page__content">
-                        <h2 class="skw-page__heading">Page 2</h2>
+                        <h2 class="skw-page__heading"> &#34; 2019 Anh đã Thấy Một Loài Cây Như Thế &#34; </h2>
                         <p class="skw-page__description">Nothing to do here, continue scrolling.</p>
                     </div>
                 </div>
@@ -161,13 +164,13 @@
             <div class="skw-page__half skw-page__half--right">
                 <div class="skw-page__skewed">
                     <div class="skw-page__content">
-                        <h2 class="skw-page__heading">Page 3</h2>
+                        <h2 class="skw-page__heading">&#34; 2019 Từ Điển LGBTQ+ &#34;</h2>
                         <p class="skw-page__description">The end is near, I promise!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="skw-page skw-page-4">
+        <!-- <div class="skw-page skw-page-4">
             <div class="skw-page__half skw-page__half--left">
                 <div class="skw-page__skewed">
                     <div class="skw-page__content">
@@ -202,7 +205,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 
