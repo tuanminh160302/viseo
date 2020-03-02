@@ -9,7 +9,7 @@ header {
     z-index: 10;
 }
 
-header > #logo {
+header > #index {
     cursor: pointer;
     margin-top: 1vh;
     margin-left: 3vw;

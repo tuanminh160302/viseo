@@ -118,42 +118,26 @@ body {
 }
 
 .skw-page-1 .skw-page__half--left .skw-page__content {
-	background-image: url(/img/tutinh.jpg);
+	background-image: url(https://i.imgur.com/1zbOEfB.jpg);
 }
 
 .skw-page-1 .skw-page__half--right .skw-page__content {
-    background: #1a172a;
+    background: linear-gradient(to bottom, #133442, #1a172a);
 }
 
 .skw-page-2 .skw-page__half--left .skw-page__content {
-    background: #1a172a;
+    background: linear-gradient(to bottom, #133442, #1a172a);
 }
 
 .skw-page-2 .skw-page__half--right .skw-page__content {
-	background-image: url(/img/skw2.jpg);
+	background-image: url(https://i.imgur.com/LgpXWEt.jpg);
 }
 
 .skw-page-3 .skw-page__half--left .skw-page__content {
-	background-image: url(/img/tudien.png);
+	background-image: url(https://i.imgur.com/mLLsbF3.png);
 	background-size: cover;
 }
 
 .skw-page-3 .skw-page__half--right .skw-page__content {
-    background: #1a172a;
-}
-
-.skw-page-4 .skw-page__half--left .skw-page__content {
-    background: #1a172a;
-}
-
-.skw-page-4 .skw-page__half--right .skw-page__content {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
-}
-
-.skw-page-5 .skw-page__half--left .skw-page__content {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg');
-}
-
-.skw-page-5 .skw-page__half--right .skw-page__content {
-    background: #1a172a;
+    background: linear-gradient(to bottom, #133442, #1a172a);
 }

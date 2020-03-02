@@ -4,8 +4,7 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    /* background: linear-gradient(to bottom, orange, #1a172a); */
-    background: #f9b233;
+    background: #133442;
     z-index: -1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
@@ -19,7 +18,6 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    /* background: linear-gradient(to bottom, #1a172a, orange); */
     z-index: -1;
     background: #1a172a;
     -webkit-transform: scaleY(0);
