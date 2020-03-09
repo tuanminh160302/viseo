@@ -12,6 +12,7 @@ body {
 }
 
 .skw-pages {
+    margin-top: 10vh;
     overflow: hidden;
     position: relative;
     z-index: 20;
@@ -130,11 +131,16 @@ body {
 }
 
 .skw-page-2 .skw-page__half--right .skw-page__content {
-	background-image: url(https://i.imgur.com/LgpXWEt.jpg);
+    background-image: url(https://i.imgur.com/LgpXWEt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .skw-page-3 .skw-page__half--left .skw-page__content {
-	background-image: url(https://i.imgur.com/mLLsbF3.png);
+    background-image: url(https://i.imgur.com/mLLsbF3.png);
+    background-position: center;
+    background-repeat: no-repeat;
 	background-size: cover;
 }
 

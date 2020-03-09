@@ -1,5 +1,7 @@
 header {
-    background-color: #133442;
+    position: absolute;
+    width: 100%;
+    background-color: white;
     display: flex;
     flex-direction: row;
     height: 10vh;
@@ -22,7 +24,6 @@ header > #tabs {
     flex-direction: row;
     align-items: center;
     width: 40%;
-    color: #eaeaea;
     margin-right: 3vw;
 }
 
@@ -30,15 +31,6 @@ header > #tabs {
     margin: 0 auto;
     cursor: pointer;
     text-decoration: none;
-    color: #eaeaea;
-}
-
-.stickyHeader {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.stickyHeader + .container {
-    padding-top: 10vh;
+    color: #1a172a;
+    font-weight: bold;
 }
