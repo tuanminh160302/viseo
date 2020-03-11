@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
 }
 
@@ -43,12 +43,12 @@ body {
 }
 
 .container {
-    margin-top: 10vh;
+    margin-top: 0vh;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
     padding: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: white;
     display: flex;
@@ -58,8 +58,8 @@ body {
 .container>.panel1 {
     margin: 0;
     padding: 0;
-    height: 90vh;
-    width: 45%;
+    height: 100vh;
+    width: 27vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +72,133 @@ body {
     margin-top: 20vh;
     -webkit-transform: translateX(28vw);
     transform: translateX(28vw);
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+#circle {
+    position: absolute;
+    height: 69.45vh;
+    width: 69.45vh;
+    margin-top: 15.275vh;
+    margin-bottom: 15.275vh;
+    background: #1a172a;
+    left: 13.3vw;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+   -webkit-box-shadow: 15px 21px 33px 6px rgba(0,0,0,0.75);
+   -moz-box-shadow: 15px 21px 33px 6px rgba(0,0,0,0.75);
+   box-shadow: 15px 21px 33px 6px rgba(0,0,0,0.75);
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    transform: translateX(0vw);
+    animation: rotating 10s linear infinite;
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+}
+
+#circle img {
+    height: 80%;
+    margin-top: 15%;
+    opacity: .7;
+}
+
+#vslogan {
+    position: absolute;
+    width: 100vh;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    left: -41.5vh;
+    bottom: 47%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 4vh;
+    left: 3vw;
+    width: 9.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.language {
+    position: absolute;
+    top: 5vh;
+    left: 18vw;
+    width: 6vw;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#vi:hover {
+    cursor: pointer;
+}
+
+#en:hover {
+    cursor: pointer;
+}
+
+#vi {
+    z-index: 999;
+    text-decoration: none;
+    color: #1a172a;
+    font-weight: 900;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#en {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    height: 4vh;
+    width: 4vw;
+    background-color: #1a172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
 #action, #showvideo {
@@ -155,50 +282,13 @@ hr {
 .container>.panel2 {
     margin: 0;
     padding: 0;
-    height: 90vh;
-    width: 55%;
-    background-color: transparent;
+    height: 100vh;
+    width: 73vw;
+    background-color: #201c37;
     display: flex;
     flex-direction: row;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
 }
 
-.panel2>img {
-    margin-top: 20%;
-    margin-left: 10%;
-    height: 25vh;
-    width: 25vh;
-    opacity: 0;
-    -webkit-transform: translateY(-30vh);
-    transform: translateY(-30vh);
-}
-
-.panel2>p {
-    font-family: 'Roboto', ;
-    margin: 18% 20% 0 7%;
-    height: 30%;
-    width: 50%;
-    font-size: 1.4em;
-    color: #eaeaea;
-    line-height: 1.75;
-    opacity: 0;
-}
-
-.panel2>.box {
-    border: 5px solid lightgray;
-    width: 90%;
-    height: 51%;
-    position: absolute;
-    left: -9%;
-    top: 11%;
-    z-index: -1;
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-}
 
 #viewmore {
     position: absolute;
@@ -218,6 +308,64 @@ hr {
 
 
 
+#brand {
+    position: absolute;
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+    top: 20.275vh;
+    left: 64vw;
+}
+
+#brand-hr {
+    position: absolute;
+    width: 7vw;
+    top: 29vh;
+    left: 64vw;
+    height: 1px;
+}
+
+#brand-exp {
+    position: absolute;
+    width: 26.25vw;
+    height: 44.2vh;
+    color: white;
+    left: 64vw;
+    top: 33vh;
+    margin: 0;
+    opacity: 1;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 3% 0 0;
+}
+
+.viewall {
+    position: absolute;
+    bottom: 4.5vh;
+    left: 64vw;
+    width: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.viewall a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.viewall a:hover {
+    cursor: pointer;
+}
+
+.viewall img:hover {
+    cursor: pointer;
+}
 
 /* ______________________________________________ */
 
