@@ -11,12 +11,17 @@ header {
     z-index: 10;
 }
 
-header > #index {
+.index {
     cursor: pointer;
     margin-top: 3vh;
     margin-left: 3vw;
     height: 8vh;
     width: 8vh;
+    z-index: 11;
+    background-image: url(https://i.imgur.com/5046qxI.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header > #tabs {
@@ -40,7 +45,7 @@ input {
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: solid white;
-    background-color: #201c37;
+    background-color: transparent;
     outline: none;
     padding: 0 5px 0 5px;
     color: white;

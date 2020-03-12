@@ -5,20 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index2.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/curtain.css">
     <link rel="stylesheet" href="css/loadbar.css">
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <title>Document</title>
+    <title>ViSEO - Vietnam Sex Education Organisation</title>
 </head>
 
 <body>
 
+
+    <!-- TRANSITION SLIDEBAR  -->
     <div class="sb-container">
         <div class="slide-bar" id="sb1"></div>
         <div class="slide-bar" id="sb2"></div>
@@ -31,16 +30,12 @@
         <div class="slide-bar" id="sb9"></div>
         <div class="slide-bar" id="sb10"></div>
     </div>
+    <!-- TRANSITION SLIDEBAR  -->
 
-    <div class="video-container">
-        <video id="video" muted>
-            <source src="video/GUITAR PORTFOLIO.mp4" type="video/mp4">
-            Your browser does not support this video. Please change to Chrome!
-        </video>
-    </div>
 
+    <!-- HEADER -->
     <header class="header" id="myHeader">
-        <img id="index" src="https://i.imgur.com/5046qxI.png" class="thumbnail">
+        <a class="index" href="index.html"></a>
         <div id="tabs">
             <a class="video-tabs" href="index.html" id="home">HOME</a>
             <a class="video-tabs" id="pg">GALLERY</a>
@@ -52,261 +47,108 @@
             </div>
         </div>
     </header>
-
-    <script>
-        $(document).ready(function () {
-            $('img.thumbnail').click(function () {
-                window.location.href = this.id + '.html';
-            });
-        });
-    </script>
-
-    <!-- Amazing transition -->
-
-    <div class="curtain">
-
-    </div>
+    <!-- HEADER -->
 
 
-    <!-- Amazing transition -->
+    <!-- TRANSITION CURTAIN -->
+    <div class="curtain"></div>
+    <!-- TRANSITION CURTAIN -->
 
-    <div class="container">
-        <div id="vslogan">LET &nbsp;&nbsp; EQUALITY &nbsp;&nbsp; BLOOM</div>
-        <div class="social-media">
+
+    <!-- CONTAINER - 1 - HOME -->
+    <div id="con1" class="container">
+        <div class="vslogan" id="vslogan">LET &nbsp;&nbsp; EQUALITY &nbsp;&nbsp; BLOOM</div>
+        <div class="social-media" id="social-media">
             <img src="img/fb.png" alt="">
             <img src="img/insta.png" alt="">
             <img src="img/twitter.png" alt="">
         </div>
-        <!-- <div id="container-img"></div> -->
         <div class="panel1">
-            <div class="language">
+            <div class="language" id="language">
                 <a id="vi" href="index-vi.html" target="_blank">VI</a>
                 <a id="en" href="">EN</a>
             </div>
-            <a style="display:none" id="showvideo" href="#">
-                <div onclick="setTimeout(autoplay, 2200)" class="button-fill grey">
-                    <div class="button-text">Our Video</div>
-                    <div class="button-inside">
-                        <div class="inside-text">Our&nbspVideo</div>
-                    </div>
-                </div>
-            </a>
             <div id="circle">
                 <img src="img/insidecircle.png" alt="">
             </div>
         </div>
         <div class="panel2">
-            <h1 id="brand">VISEO</h1>
+            <h1 id="brand">V i S E O</h1>
             <hr id="brand-hr">
-            <p id="brand-exp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a assumenda, numquam delectus
-                corrupti nobis quae repellat! Voluptatem fuga repellat illo optio odio dicta temporibus ab, vero unde
-                nulla est!</p>
+            <p id="brand-exp">Vietnam Sex Education Organisation</p>
+            <p id="brand-exp2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestiae nemo optio
+                repellendus illum, quia sapiente non similique placeat ratione. Recusandae magnam id quia cumque
+                officia, ut quo consectetur dolores.</p>
             <div class="viewall">
                 <img id="icon-viewall" src="img/viewallicon.png" alt="">
                 <a id="view-action">View All</a>
             </div>
 
         </div>
-
-        <!-- <div id="viewmore">
-            <a id="question" href="#" onclick="return false">Explore Gallery</a>
-        </div> -->
-
     </div>
-
-    <script>
-        document.getElementById('showvideo').addEventListener('click', function () {
-            TweenMax.to('.sb-container', 0, { zIndex: '1000', opacity: 1 });
-            TweenMax.to('#sb1', 1, { zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb2', 1, { delay: .07, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb3', 1, { delay: .14, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb4', 1, { delay: .21, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb5', 1, { delay: .28, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb6', 1, { delay: .35, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb7', 1, { delay: .42, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb8', 1, { delay: .49, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb9', 1, { delay: .56, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-            TweenMax.to('#sb10', 1, { delay: .63, zIndex: '1000', scaleX: 1, ease: Power4.easeOut });
-
-            TweenMax.to('.slide-bar', 0, { delay: 1.63, transformOrigin: 'left' });
-
-            TweenMax.to('.sb-img', .5, { delay: 2, opacity: 0 });
-
-            TweenMax.to('#sb1', 1, { delay: 2.33, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb2', 1, { delay: 2.4, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb3', 1, { delay: 2.47, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb4', 1, { delay: 2.54, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb5', 1, { delay: 2.61, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb6', 1, { delay: 2.68, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb7', 1, { delay: 2.75, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb8', 1, { delay: 2.82, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb9', 1, { delay: 2.89, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('#sb10', 1, { delay: 2.96, zIndex: '1000', scaleX: 0, ease: Power4.easeOut });
-            TweenMax.to('.slide-bar', 0, { delay: 3.96, zIndex: '-10' });
-            TweenMax.to('.sb-container', 0, { delay: 3.96, zIndex: '-10', opacity: 0 });
-
-            TweenMax.to('.video-container', 0, { delay: 1.63, opacity: 1, zIndex: '997', marginTop: '0', height: '100vh' });
-            TweenMax.to('.header', 0, { delay: 1.63, zIndex: '999', background: 'transparent' });
-            TweenMax.to('.video-tabs', 0, { delay: 1.63, color: '#eaeaea' });
-            TweenMax.to('.shadow', 0, { delay: 1.63, zIndex: '998', opacity: 1 });
-
-        })
-
-        function autoplay() {
-            console.log('ditmemay')
-            var vid = document.getElementById('video');
-            vid.autoplay = true;
-            vid.load();
-        }
+    <!-- CONTAINER - 1 - HOME -->
 
 
-        // document.getElementById('view-action').addEventListener('click', function () {
-        //     console.log('ditmemay');
-        //     // TweenMax.to('#viewmore', 1.2, { delay: 2.3, opacity: 1, y: 0, ease: Power4.easeOut });
-        // })
+    <!-- CONTAINER - 2 - GALLERY - home -->
+    <div id="con2" class="container">
+        <div class="vslogan" id="vslogan2">PHOTOS &nbsp;&nbsp; GALLERY </div>
+        <div class="social-media" id="social-media2">
+            <img src="img/fb.png" alt="">
+            <img src="img/insta.png" alt="">
+            <img src="img/twitter.png" alt="">
+        </div>
+        <div class="panel1">
+            <div class="language" id="language2">
+                <a id="vi" href="index-vi.html" target="_blank">VI</a>
+                <a id="en" href="">EN</a>
+            </div>
 
-        document.getElementById('view-action').addEventListener('click', function () {
-            TweenMax.to('.curtain', 0, { delay: 0, zIndex: '1000' });
-            TweenMax.to('.curtain', .7, { delay: 0.25, scaleY: 1, ease: Power4.easeOut, opacity: 1 });
-            TweenMax.to('.curtain', 0, { opacity: 1 });
-            TweenMax.to('.curtain', 0, { delay: 2.3, zIndex: '-1' });
-            TweenMax.to('.curtain', 0, { delay: 2.8, opacity: 0 });
-            TweenMax.to('.container', 0, { delay: 1, display: 'none' });
-            TweenMax.to('.skw-pages', 1.5, { delay: 2.1, opacity: 1 });
-            TweenMax.to('.curtain', 1.3, { delay: 1.5, scaleY: 0, ease: Power4.easeOut });
-        })
-    </script>
+            <img id="arrow-action" src="img/arrow1.png" alt="">
+        </div>
+        <div id="panel2-gallery" class="panel2">
+            <img id="arrow-action2" src="img/arrow1-white.png" alt="">
+            <div id='gradient-curtain'></div>
+        </div>
+    </div>
+    <!-- CONTAINER - 2 - GALLERY - home -->
 
-    <script>
-        $(".button-fill").hover(function () {
-            $(this).children(".button-inside").addClass('full');
-        }, function () {
-            $(this).children(".button-inside").removeClass('full');
+
+    <!-- CONTAINER - 3 - GALLERY - pre -->
+    <div id="con3" class="container">
+        <div class="vslogan" id="vslogan3">PHOTOS &nbsp;&nbsp; GALLERY </div>
+        <div class="social-media" id="social-media3">
+            <img src="img/fb.png" alt="">
+            <img src="img/insta.png" alt="">
+            <img src="img/twitter.png" alt="">
+        </div>
+        <!-- <div id="container-img"></div> -->
+        <div class="panel1">
+            <div class="language" id="language3">
+                <a id="vi" href="index-vi.html" target="_blank">VI</a>
+                <a id="en" href="">EN</a>
+            </div>
+
+        </div>
+        <div id="panel2-gallery" class="panel2">
+
+        </div>
+    </div>
+    <!-- CONTAINER - 3 - GALLERY - pre -->
+
+
+    <!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->
+    <script src="js/transition.js"></script>
+    <script src="js/load.js">
+
+        $(document).ready(function () {
+            $('img.thumbnail').click(function () {
+                window.location.href = this.id + '.html';
+            });
         });
     </script>
-
-    <!-- <script src="js/stickyHeader.js"></script> -->
-
-    <script src="js/scrollMagic.js"></script>
-
-    <div class="skw-pages">
-        <div class="skw-page skw-page-1 active">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading">&#34; 2019 Tự Tình &#34;</h2>
-                        <p class="skw-page__description">Just scroll down</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-2">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading"> &#34; 2019 Anh đã Thấy Một Loài Cây Như Thế &#34; </h2>
-                        <p class="skw-page__description">Nothing to do here, continue scrolling.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-3">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading">&#34; 2019 Từ Điển LGBTQ+ &#34;</h2>
-                        <p class="skw-page__description">Scroll up, see more</p>
-                        <p class="skw-page__description" id="event-proceed">Click to explore more</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="skw-page skw-page-4">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading">Page 4</h2>
-                        <p class="skw-page__description">Ok, ok, just one more scroll!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skw-page skw-page-5">
-            <div class="skw-page__half skw-page__half--left">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content"></div>
-                </div>
-            </div>
-            <div class="skw-page__half skw-page__half--right">
-                <div class="skw-page__skewed">
-                    <div class="skw-page__content">
-                        <h2 class="skw-page__heading">Epic finale</h2>
-                        <p class="skw-page__description">
-                            Feel free to check
-                            <a class="skw-page__link" href="https://codepen.io/suez/pens/public/" target="_blank">my
-                                other pens</a> and follow me on
-                            <a class="skw-page__link" href="https://twitter.com/NikolayTalanov"
-                                target="_blank">Twitter</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    </div>
-
-    <script>
-        document.getElementById('event-proceed').addEventListener('click', function () {
-            TweenMax.to('.container', 0, { display: 'none' });
-            TweenMax.to('.curtain', 0, { scaleY: 0, zIndex: '21' });
-            TweenMax.to('.curtain2', 0, { scaleY: 0, zIndex: '21' });
-            TweenMax.to('body', 0, { backgroundColor: '#1a172a' });
-            TweenMax.to('.skw-pages', 0, { display: 'none' });
-            TweenMax.to('.header', 0, { display: 'none' });
-            TweenMax.to('.curtain', .7, { delay: 0.25, scaleY: 1, ease: Power4.easeOut });
-            TweenMax.to('.curtain2', 1.3, { delay: 1.5, scaleY: 1, ease: Power4.easeOut });
-            TweenMax.to('.curtain', 0, { delay: 2.8, zIndex: '-1', scaleY: 0 });
-            TweenMax.to('.curtain2', 0, { delay: 2.8, zIndex: '-1', scaleY: 0 });
-            TweenMax.to('.header', 0, { delay: 1.5, display: 'flex', background: '#1a172a' });
-            TweenMax.to('.event-container', 0, { zIndex: '30' });
-            TweenMax.to('.event-container', .3, { delay: 2.8, opacity: 1 });
-            TweenMax.to('.bg-image', .3, { delay: 2.8, opacity: 1 });
-        })
-    </script>
-
-    <div class="event-container">
-        <div class="bg-image"></div>
-        <h1>Our Events</h1>
-        <p id="event-intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, praesentium laudantium ea
-            distinctio alias excepturi ullam aliquam sequi quam doloribus autem. Dolor optio similique eius atque quod
-            distinctio tenetur rerum?</p>
-        <div id="event-i">
-            <img src="img/NBYTrungQuoc.jpg">
-            <p id="event-title">2019 Tu Tinh</p>
-        </div>
-    </div>
+    <!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->
 
 
-    <script src="js/load.js"></script>
 </body>
 
 </html>
