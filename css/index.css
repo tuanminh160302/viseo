@@ -397,11 +397,11 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translateX(80vw);
-    -o-transform: translateX(80vw);
-    -webkit-transform: translateX(80vw);
-    -moz-transform: translateX(80vw);
-    -ms-transform: translateX(80vw);
+    transform: translateX(77vw);
+    -o-transform: translateX(77vw);
+    -webkit-transform: translateX(77vw);
+    -moz-transform: translateX(77vw);
+    -ms-transform: translateX(77vw);
 }
 
 #gradient-curtain {

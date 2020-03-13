@@ -11,6 +11,53 @@
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#curtain-logo {
+    /* animation: fill .5s ease forwards 3.2s; */
+}
+
+#curtain-logo path:nth-child(1) {
+    stroke-dasharray: 343.0288391113281px;
+    stroke-dashoffset: 343.0288391113281px;
+}
+
+#curtain-logo path:nth-child(2) {
+    stroke-dasharray: 198.91851806640625px;
+    stroke-dashoffset: 198.91851806640625px;
+}
+
+#curtain-logo path:nth-child(3) {
+    stroke-dasharray: 365.45965576171875px;
+    stroke-dashoffset: 365.45965576171875px;
+}
+
+#curtain-logo path:nth-child(4) {
+    stroke-dasharray: 352.17303466796875px;
+    stroke-dashoffset: 352.17303466796875px;
+}
+
+#curtain-logo path:nth-child(5) {
+    stroke-dasharray: 418.8335876464844px;
+    stroke-dashoffset: 418.8335876464844px;
+}
+
+@keyframes animated_logo {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
 }
 
 .sb-container {

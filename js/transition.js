@@ -39,47 +39,33 @@ document.getElementById('pg').addEventListener('click', function () {
 
 document.getElementById('view-action').addEventListener('click', function () {
     TweenMax.to('#circle', 0, { animation: 'rotating .5s linear infinite' });
-    TweenMax.to('.curtain', 0, { delay: 0, zIndex: '1000' });
-    TweenMax.to('.curtain', .7, { delay: 0.25, scaleY: 1, ease: Power4.easeOut, opacity: 1 });
+    TweenMax.to('.curtain', 0, { zIndex: '1000' });
     TweenMax.to('.curtain', 0, { opacity: 1 });
-    TweenMax.to('.curtain', 0, { delay: 2.3, zIndex: '-1' });
-    TweenMax.to('.curtain', 0, { delay: 2.8, opacity: 0 });
     TweenMax.to('#con1', 0, { delay: 1, display: 'none' });
     TweenMax.to('#con2', 0, { delay: 1, display: 'flex' });
     TweenMax.to('.video-tabs', 0, { delay: 1, color: 'black' });
+    TweenMax.to('.curtain', .7, { delay: 0.25, scaleY: 1, ease: Power4.easeOut });
     TweenMax.to('input', 0, { delay: 1, borderBottom: 'solid black', color: 'black' });
-    TweenMax.to('.curtain', 1.3, { delay: 1.5, scaleY: 0, ease: Power4.easeOut });
-    TweenMax.to('.panel2', 4, { delay: 2.5, x: 0, ease: Elastic.easeOut.config(1, 0.3) });
-    TweenMax.to('#vslogan', .3, { opacity: 0 });
-    TweenMax.to('#vslogan2', .3, { delay: 3, opacity: 1 });
-    TweenMax.to('#social-media', .3, { opacity: 0 });
-    TweenMax.to('#social-media2', .3, { delay: 3, opacity: 1 });
-    TweenMax.to('#language', .3, { opacity: 0 });
-    TweenMax.to('#language2', .3, { delay: 3, opacity: 1 });
-    TweenMax.to('#arrow-action', 0, { delay: 6, opacity: 1 });
-});
 
+    TweenMax.to('#curtain-logo', 0, { animation: 'fill .4s ease forwards 2.5s' });
+    TweenMax.to('#curtain-logo', 0.5, { delay: 3, opacity: 0 });
+    TweenMax.to('#path1', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards' });
+    TweenMax.to('#path2', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 0.3s' });
+    TweenMax.to('#path3', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 0.6s' });
+    TweenMax.to('#path4', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 0.9s' });
+    TweenMax.to('#path5', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 1.2s' });
 
-document.getElementById('view-action').addEventListener('click', function () {
-    TweenMax.to('#circle', 0, { animation: 'rotating .5s linear infinite' });
-    TweenMax.to('.curtain', 0, { delay: 0, zIndex: '1000' });
-    TweenMax.to('.curtain', .7, { delay: 0.25, scaleY: 1, ease: Power4.easeOut, opacity: 1 });
-    TweenMax.to('.curtain', 0, { opacity: 1 });
-    TweenMax.to('.curtain', 0, { delay: 2.3, zIndex: '-1' });
-    TweenMax.to('.curtain', 0, { delay: 2.8, opacity: 0 });
-    TweenMax.to('#con1', 0, { delay: 1, display: 'none' });
-    TweenMax.to('#con2', 0, { delay: 1, display: 'flex' });
-    TweenMax.to('.video-tabs', 0, { delay: 1, color: 'black' });
-    TweenMax.to('input', 0, { delay: 1, borderBottom: 'solid black', color: 'black' });
-    TweenMax.to('.curtain', 1.3, { delay: 1.5, scaleY: 0, ease: Power4.easeOut });
-    TweenMax.to('.panel2', 4, { delay: 2.5, x: 0, ease: Elastic.easeOut.config(1, 0.3) });
+    TweenMax.to('.curtain', 1.3, { delay: 3.5, scaleY: 0, ease: Power4.easeOut });
+    TweenMax.to('.panel2', 1, { delay: 4.2, x: 0, ease: Back.easeOut.config(4)});
     TweenMax.to('#vslogan', .3, { opacity: 0 });
-    TweenMax.to('#vslogan2', .3, { delay: 3, opacity: 1 });
+    TweenMax.to('#vslogan2', .3, { delay: 4.9, opacity: 1 });
     TweenMax.to('#social-media', .3, { opacity: 0 });
-    TweenMax.to('#social-media2', .3, { delay: 3, opacity: 1 });
+    TweenMax.to('#social-media2', .3, { delay: 4.9, opacity: 1 });
     TweenMax.to('#language', .3, { opacity: 0 });
-    TweenMax.to('#language2', .3, { delay: 3, opacity: 1 });
-    TweenMax.to('#arrow-action', 0, { delay: 6, opacity: 1 });
+    TweenMax.to('#language2', .3, { delay: 5, opacity: 1 });
+    TweenMax.to('#arrow-action', 0, { delay: 5.35, opacity: 1 });
+    TweenMax.to('.curtain', 0, { delay: 4.8, zIndex: '-1' });
+    TweenMax.to('.curtain', 0, { delay: 4.8, opacity: 0 });
 });
 
 
