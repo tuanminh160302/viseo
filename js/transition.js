@@ -69,6 +69,39 @@ document.getElementById('view-action').addEventListener('click', function () {
 });
 
 
+document.getElementById('events').addEventListener('click', function () {
+    TweenMax.to('.curtain', 0, { zIndex: '1000' });
+    TweenMax.to('.curtain', 0, { opacity: 1 });
+    TweenMax.to('#con1', 0, { delay: 1, display: 'none' });
+    TweenMax.to('#con2', 0, { delay: 1, display: 'none' });
+    TweenMax.to('#con3', 0, { delay: 1, display: 'none' });
+    TweenMax.to('#con4', 0, { delay: 1, display: 'flex' });
+    TweenMax.to('.video-tabs', 0, { delay: 1, color: 'black' });
+    TweenMax.to('.curtain', .7, { delay: 0.25, scaleY: 1, ease: Power4.easeOut });
+    TweenMax.to('input', 0, { delay: 1, borderBottom: 'solid black', color: 'black' });
+
+    TweenMax.to('#curtain-logo', 0, { animation: 'fill .4s ease forwards 2.5s' });
+    TweenMax.to('#curtain-logo', 0.5, { delay: 3, opacity: 0 });
+    TweenMax.to('#path1', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards' });
+    TweenMax.to('#path2', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 0.3s' });
+    TweenMax.to('#path3', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 0.6s' });
+    TweenMax.to('#path4', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 0.9s' });
+    TweenMax.to('#path5', 0, { delay: 0.95, animation: 'animated_logo 1.3s ease forwards 1.2s' });
+
+    TweenMax.to('.curtain', 1.3, { delay: 3.5, scaleY: 0, ease: Power4.easeOut });
+    TweenMax.to('.panel2', 1, { delay: 4.2, x: 0, ease: Back.easeOut.config(4)});
+    TweenMax.to('#vslogan', .3, { opacity: 0 });
+    TweenMax.to('#vslogan4', .3, { delay: 4.9, opacity: 1 });
+    TweenMax.to('#social-media', .3, { opacity: 0 });
+    TweenMax.to('#social-media4', .3, { delay: 4.9, opacity: 1 });
+    TweenMax.to('#language', .3, { opacity: 0 });
+    TweenMax.to('#language4', .3, { delay: 5, opacity: 1 });
+    TweenMax.to('.curtain', 0, { delay: 4.8, zIndex: '-1' });
+    TweenMax.to('.curtain', 0, { delay: 4.8, opacity: 0 });
+});
+
+
+
 document.getElementById('arrow-action').addEventListener('click', function () {
     TweenMax.to('#gradient-curtain', .7, { delay: .5, opacity: 1 });
     TweenMax.to('#arrow-action', 0, { x: '20vw', opacity: 0 });
