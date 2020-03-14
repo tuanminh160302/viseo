@@ -491,3 +491,11 @@ hr {
     justify-content: center;
 } */
 
+
+#con4 {
+    display: none;
+}
+
+#con4 .panel2 {
+    background: transparent;
+}
