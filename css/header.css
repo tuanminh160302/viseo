@@ -30,6 +30,7 @@ header > #tabs {
     margin-top: 6vh;
     width: 55%;
     margin-right: 3vw;
+
 }
 
 #tabs > a {
@@ -37,7 +38,8 @@ header > #tabs {
     cursor: pointer;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input {
