@@ -143,6 +143,10 @@ body {
     opacity: 0;
 }
 
+#vslogan5 {
+    opacity: 0;
+}
+
 .social-media {
     position: absolute;
     bottom: 4vh;
@@ -166,6 +170,10 @@ body {
 }
 
 #social-media4 {
+    opacity: 0;
+}
+
+#social-media5 {
     opacity: 0;
 }
 
@@ -194,6 +202,10 @@ body {
 }
 
 #language4 {
+    opacity: 0;
+}
+
+#language5 {
     opacity: 0;
 }
 
@@ -491,4 +503,59 @@ hr {
     -webkit-transform-origin: top bottom;
     -moz-transform-origin: top bottom;
     -ms-transform-origin: top bottom; */
+}
+
+#con5 {
+    display: none;
+}
+
+#con5 .panel1 {
+
+}
+
+#con5 .panel2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-contents {
+    width: 75%;
+    height: 50%;
+    opacity: 0;
+}
+
+.contacts-contents img {
+    height: 100%;
+    float: left;
+}
+
+.contacts-contents .contacts-details {
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ebebeb;
+}
+
+.contacts-details h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts-details p {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts-details a {
+    color: #ebebeb;
+    text-decoration: underline;
+}
+
+#contact-fb h3 {
+    margin-bottom: 1em;
 }

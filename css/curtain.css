@@ -45,35 +45,6 @@
     stroke-dashoffset: 418.8335876464844px;
 }
 
-#curtain-logo2 {
-    display: none;
-}
-
-#curtain-logo2 path:nth-child(1) {
-    stroke-dasharray: 343.0288391113281px;
-    stroke-dashoffset: 343.0288391113281px;
-}
-
-#curtain-logo2 path:nth-child(2) {
-    stroke-dasharray: 198.91851806640625px;
-    stroke-dashoffset: 198.91851806640625px;
-}
-
-#curtain-logo2 path:nth-child(3) {
-    stroke-dasharray: 365.45965576171875px;
-    stroke-dashoffset: 365.45965576171875px;
-}
-
-#curtain-logo2 path:nth-child(4) {
-    stroke-dasharray: 352.17303466796875px;
-    stroke-dashoffset: 352.17303466796875px;
-}
-
-#curtain-logo2 path:nth-child(5) {
-    stroke-dasharray: 418.8335876464844px;
-    stroke-dashoffset: 418.8335876464844px;
-}
-
 @keyframes animated_logo {
     to {
         stroke-dashoffset: 0;
