@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 380px) {
+@media only screen and (max-device-width: 1024px) {
 
     html,
     body {
@@ -243,7 +243,7 @@
 
     .mcon-2 {
         position: relative;
-        height: 100vh;
+        height: 130vh;
         width: 100%;
         background-attachment: fixed;
         transition: .5s;
@@ -257,34 +257,126 @@
         color: black;
         font-size: 2rem;
         left: 8vw;
+        border-bottom: 2px solid #ebebeb;
     }
 
     .mgalleryintro.introchange {
         color: white;
     }
 
+    .bst {
+        width: 80vw;
+        height: 25vh;
+        margin-left: 8vw;
+        margin-top: 10vh;
+        position: relative;
+        top: 15vh;
+    }
+
+    #bst-1 {
+        background-image: url(/img/NBYTrungQuoc.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #bst-2 {
+        background-image: url(/img/home-gallery-img.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #bst-3 {
+        background-image: url(/img/lgbtq+.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;  
+    }
+
+    @media only screen and (max-device-height: 600px) {
+        .mcon-3 {
+            position: relative;
+            height: 180vh !important;
+            width: 100%;
+            background-attachment: fixed;
+            transition: .5s;
+        }
+    }
+
+    
+    @media only screen and (max-device-height: 650px) {
+        .mcon-3 {
+            position: relative;
+            height: 160vh !important;
+            width: 100%;
+            background-attachment: fixed;
+            transition: .5s;
+        }
+    }
+
+    @media only screen and (max-device-height: 750px) {
+        .mcon-3 {
+            position: relative;
+            height: 150vh !important;
+            width: 100%;
+            background-attachment: fixed;
+            transition: .5s;
+        }
+    }
+
     .mcon-3 {
         position: relative;
-        height: 100vh;
+        height: 142vh;
         width: 100%;
         background-attachment: fixed;
         transition: .5s;
     }
 
-    .mcon-4 {
+    .meventintro {
+        top: 8vh;
         position: relative;
-        height: 100vh;
-        width: 100%;
-        transition: .5s;
-        background-attachment: fixed;
+        font-family: 'Hind Siliguri', sans-serif;
+        color: white;
+        font-size: 2rem;
+        left: 8vw;
+        border-bottom: 2px solid white;
     }
 
-    .mcon-5 {
+    #bst-4 {
+        margin-top: 0 !important;
+        background-image: url(/img/17.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .event-recap {
         position: relative;
-        height: 100vh;
-        width: 100%;
-        transition: .5s;
-        background-attachment: fixed;
+        margin-left: 8vw;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 18vh;
+        width: 80vw;
+        line-height: 2rem;
+    }
+
+    .ptmevent {
+        position: relative;
+        color: white;
+        margin-left: 8vw;
+        font-family: 'Ubuntu', sans-serif;
+        top: 5vh;
+        border-bottom: 2px solid white;
+        padding-bottom: 4px;
+    }
+
+    .footer {
+        position: absolute;
+        width: 100vw;
+        height: 50vh;
+        bottom: 0;
+        background-color: #ebebeb;
     }
 
     .triggerbg.changecolor {
