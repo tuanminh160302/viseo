@@ -46,7 +46,8 @@
     .mlogo {
         z-index: 2000;
         position: fixed;
-        background-image: url(https://i.imgur.com/5046qxI.png);
+        /* background-image: url(https://i.imgur.com/5046qxI.png); */
+        background-image: url(/img/logo.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -116,6 +117,25 @@
         
     }
 
+    .vertical-mmenu-expand {
+        width: 20vw;
+        height: 100vh;
+        background-color: #1a172a;
+        z-index: 1999;
+        position: fixed;
+        left: 0;
+        transform: scaleY(0);
+        -webkit-transform: scaleY(0);
+        -moz-transform: scaleY(0);
+        -o-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform-origin: top;
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        -o-transform-origin: top;
+        -ms-transform-origin: top;
+    }
+
     .mtabs {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
@@ -124,6 +144,11 @@
         text-align: right;
         margin: 15% 45% 0 0;
         opacity: 0;
+    }
+
+    .mtabs a {
+        text-decoration: none;
+        color: black;
     }
 
     .triggerbg {

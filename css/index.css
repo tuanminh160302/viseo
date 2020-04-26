@@ -322,11 +322,16 @@
         opacity: 0;
     }
 
+    #icon-viewall {
+        height: 2.5vh;
+        width: auto;
+    }
+
     .viewall {
         position: absolute;
         bottom: 3vh;
         left: 60vw;
-        width: 9.5vw;
+        width: auto;
         height: 5vh;
         display: flex;
         flex-direction: row;
@@ -346,6 +351,9 @@
         color: white;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
+        height: 3vh;
+        width: auto;
+        margin-left: 1vw;
     }
 
     .viewall a:hover {
@@ -475,13 +483,102 @@
     }
 
     #con3 .panel2 {
+        background: #1a172a;
+    }
+
+    #con3 .panel1 {
+        background-color: #ebebeb;
+    }
+
+    .pre-gallery-h1 {
+        position: absolute;
+        color: #ebebeb;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        padding: 0;
+        top: 22vh;
+        margin-left: 13vw;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .pre-gallery-h3 {
+        position: absolute;
+        color: #ebebeb;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        padding: 0;
+        top: 32vh;
+        margin-left: 13vw;
+    }
+
+    .pre-gallery-details {
+        position: absolute;
+        color: #ebebeb;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        padding: 0;
+        top: 40vh;
+        margin-left: 13vw;
+        width: 20vw;
+        line-height: 2.5rem;
+    }
+
+    .gallery-options-container {
+        height: 65vh;
+        width: 30vw;
+        position: absolute;
+        top: 20vh;
+        right: 3vw;
+        background-color: #1a172a;
+        /* border: 1px solid #ebebeb; */
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .gallery-options-container a {
+        text-decoration: none;
+    }
+
+    .gallery-options {
+        height: 40vh;
+        width: 20vw;
+        margin: 0 5vw 0 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-options-p {
+        color: #ebebeb;
+        font-family: "Ubuntu", sans-serif;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 2px;
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #1a172a;
+    }
+
+    ::-webkit-scrollbar-thumb {
         background: #ebebeb;
     }
 
-    /* #con3 .panel1 {
-    justify-content: center;
-} */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
 
+    .gallery-options-img {
+        max-height: 30vh;
+        max-width: 20vw;
+        cursor: pointer;
+    }
 
     #con4 {
         display: none;
@@ -541,7 +638,7 @@
         height: 100%;
         width: 50%;
         float: right;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         color: #ebebeb;

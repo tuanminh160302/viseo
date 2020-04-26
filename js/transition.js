@@ -34,7 +34,7 @@ document.getElementById('pg').addEventListener('click', function () {
     TweenMax.to('#con3', 0, { delay: 2, display: 'flex' });
     TweenMax.to('#con4', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con5', 0, { delay: 2, display: 'none' });
-    TweenMax.to('.video-tabs', 0, { delay: 2, color: 'black' });
+    TweenMax.to('.video-tabs', 0, { delay: 2, color: '#ebebeb' });
     TweenMax.to('input', 0, { delay: 2, borderBottom: 'solid black', color: 'black' });
 });
 
