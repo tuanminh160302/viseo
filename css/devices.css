@@ -1,14 +1,14 @@
-  /* if desktop */
+  /* if desktop
   .mobile {
     display: none;
-}
+} */
 
 
 /* if mobile device max width 380px */
-@media only screen and (max-device-width: 1024px) {
+/* @media only screen and (max-device-width: 1024px) {
     .mobile {display: block;}       
     .desktop {display: none;}
-}
+} */
 
 
 
@@ -32,4 +32,4 @@
 
 
 
-} 
+ 

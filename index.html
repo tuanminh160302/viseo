@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/devices.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/curtain.css">
     <link rel="stylesheet" href="css/loadbar.css">
-    <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -22,7 +20,7 @@
 
 <body>
 
-    <div class="desktop">
+    <div id="desktop" class="desktop">
         <!-- TRANSITION SLIDEBAR  -->
         <div class="sb-container">
             <div class="slide-bar" id="sb1"></div>
@@ -255,70 +253,12 @@
 
     </div>
 
-    <!-- MOBILE HTML -->
-    <div class="mobile">
-
-        <div class="vertical-mmenu-expand"></div>
-
-        <div class="mmenu-expand">
-            <p class="mtabs"><a href="index.html">Home</a></p>
-            <p class="mtabs"><a href="">Gallery</a></p>
-            <p class="mtabs"><a href="">Events</a></p>
-            <p class="mtabs"><a href="">Contacts</a></p>
-        </div>
-
-        <div class="invisible-header triggerbg"></div>
-        <a class="mlogo" href="index.html"></a>
-        <div id="trigger-menu" class="mmenu"></div>
-        <div id="trigger-close-menu" class="mmenu-close"></div>
-
-        <div class="mcon-1 triggerbg">
-            <h1 class="mbrand">ViSEO</h1>
-            <p class="mbrand-full">Vietnam Sex Education Organization</p>
-        </div>
-
-        <div class="wall1">
-            <p class="appear-slogan">LET &nbsp;&nbsp; EQUALITY &nbsp;&nbsp; BLOOM</p>
-            <img class="appear-img" src="/img/insidecircle.png" alt="">
-            <p class="appear-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quia doloremque nobis
-                nesciunt
-                veritatis saepe. Quisquam dolore corrupti saepe voluptatem corporis, quod temporibus velit
-                doloremque officia, praesentium quibusdam, aliquam quo.</p>
-            <div class="ptmcon-2"></div>
-        </div>
-
-        <div class="mcon-2 triggerbg">
-            <a class="mgalleryintro">Watch our photos</a>
-            <div id="bst-1" class="bst"></div>
-            <div id="bst-2" class="bst"></div>
-            <div id="bst-3" class="bst"></div>
-        </div>
-
-        <div class="mcon-3 triggerbg">
-            <a class="meventintro">Join our events</a>
-            <div id="bst-4" class="bst"></div>
-            <p class="event-recap">Tự Tình là một chương trình Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Rem
-                exercitationem vitae consequatur culpa odit praesentium possimus at eum cum eos? Nostrum nisi dolorem
-                corporis? Ab necessitatibus deserunt minima culpa molestiae?</p>
-            <a class="ptmevent">View details of our events</a>
-            <div class="footer">
-                <div class="footer-info"></div>
-                <div class="subscribe">
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- MOBILE HTML -->
 
 
 
 
     <!-- SCRIPT SCRIPT SCRIPT SCRIPT SCRIPT -->
     <script src="js/transition.js"></script>
-    <script src="js/mobile-transition.js"></script>
     <script src="js/load.js">
 
         $(document).ready(function () {
@@ -337,9 +277,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
-    <script src="js/app.js"></script>
-
-
+    <script src="js/deviceDetect.js"></script>
+    
 </body>
 
 </html>

@@ -1,0 +1,147 @@
+html, body, #mobile {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+.mobile-pre-gallery-container {
+    height: 125vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ebebeb;
+}
+
+
+#gallery-intro {
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 12vh;
+    left: 4.5vw;
+}
+
+#gallery-intro-p {
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 21.5vh;
+    left: 4.5vw;
+}
+
+.pre-gallery-img-frame {
+    background-color: #1a172a;
+    height: 20vh;
+    width: 76vw;
+    position: absolute;
+    left: 12vw;
+}
+
+#pre-gallery-img-frame-1 {
+    top: 34vh;
+    background-image: url(/img/NBYTrungQuoc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pre-gallery-img-frame-2 {
+    top: 64vh;
+    background-image: url(/img/home-gallery-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pre-gallery-img-frame-3 {
+    top: 94vh;
+    background-image: url(/img/lgbtq+.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pre-gallery-img-frame-name-p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.pre-gallery-img-frame-name {
+    text-decoration: none;
+}
+
+.pre-gallery-img-frame-name #p1 {
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 54vh;
+}
+
+.pre-gallery-img-frame-name #p2 {
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 84vh;
+}
+
+.pre-gallery-img-frame-name #p3 {
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 114vh;
+}
+
+.mobile-pre-gallery {
+    display: block;
+    /* display: none; */
+}
+
+.mobile-gallery-1 {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    top: 0;
+    background-color: #ebebeb;    
+}
+
+.mobile-gallery-2 {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    top: 0;
+    background-color: #ebebeb;    
+}
+
+.mobile-gallery-3 {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    top: 0;
+    background-color: #ebebeb;    
+}
+
+.gallery-intro {
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 12vh;
+    left: 4.5vw;
+}
+
+.gallery-back {
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 21.5vh;
+    left: 4.5vw;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
