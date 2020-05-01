@@ -339,6 +339,10 @@ body {
     /* background-color: #1a172a; */
 }
 
+.mcon-2 a {
+    text-decoration: none;
+}
+
 .mgalleryintro {
     top: 18vh;
     position: relative;
