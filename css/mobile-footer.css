@@ -68,6 +68,8 @@
 }
 
 .subscribe input {
+    -webkit-appearance: none;
+    border-radius: 0;
     padding: 0 5px 0 5px;
 }
 
