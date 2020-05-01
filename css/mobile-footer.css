@@ -182,6 +182,9 @@
 }
 
 .recaptcha {
-    width: 80%;
-    height: auto;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale(0.68);
+    /* scale recaptcha image to fit */
+    transform: scale(0.68);
 }
