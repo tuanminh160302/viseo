@@ -188,3 +188,12 @@
     /* scale recaptcha image to fit */
     transform: scale(0.68);
 }
+
+#rc-imageselect {
+    position: fixed !important;
+    height: 65% !important;
+    width: auto;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+}
