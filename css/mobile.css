@@ -213,6 +213,72 @@ body {
     opacity: 0;
 }
 
+@media only screen and (max-device-height: 568px) {
+    .appear-p {
+        position: absolute;
+        height: 64%;
+        width: 60%;
+        color: white;
+        font-family: 'Ubuntu', san-serif;
+        font-size: .8rem;
+        line-height: 2.2rem;
+        font-weight: 100;
+        margin: 0;
+        top: 8% ;
+        left: 8%;
+        transform: skewY(-10deg);
+        -webkit-transform: skewY(-10deg);
+        -moz-transform: skewY(-10deg);
+        -o-transform: skewY(-10deg);
+        opacity: 0;
+    }
+  }
+
+
+  @media only screen and ( min-device-height: 569px) and (max-device-width: 640px) {
+    .appear-p {
+        position: absolute;
+        height: 64%;
+        width: 60%;
+        color: white;
+        font-family: 'Ubuntu', san-serif;
+        font-size: .92rem;
+        line-height: 2.2rem;
+        font-weight: 100;
+        margin: 0;
+        top: 8% ;
+        left: 8%;
+        transform: skewY(-10deg);
+        -webkit-transform: skewY(-10deg);
+        -moz-transform: skewY(-10deg);
+        -o-transform: skewY(-10deg);
+        opacity: 0;
+    }
+  }
+
+  @media only screen and ( min-device-height: 641px) and (max-device-width: 731px) {
+    .appear-p {
+        position: absolute;
+        height: 64%;
+        width: 60%;
+        color: white;
+        font-family: 'Ubuntu', san-serif;
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        font-weight: 100;
+        margin: 0;
+        top: 11% ;
+        left: 8%;
+        transform: skewY(-10deg);
+        -webkit-transform: skewY(-10deg);
+        -moz-transform: skewY(-10deg);
+        -o-transform: skewY(-10deg);
+        opacity: 0;
+    }
+  }
+
+
+
 /* .appear-p.appear {
         opacity: 1;
     } */
@@ -317,37 +383,6 @@ body {
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-device-height: 600px) {
-    .mcon-3 {
-        position: relative;
-        height: 180vh !important;
-        width: 100%;
-        background-attachment: fixed;
-        transition: .5s;
-    }
-}
-
-
-@media only screen and (max-device-height: 650px) {
-    .mcon-3 {
-        position: relative;
-        height: 160vh !important;
-        width: 100%;
-        background-attachment: fixed;
-        transition: .5s;
-    }
-}
-
-@media only screen and (max-device-height: 750px) {
-    .mcon-3 {
-        position: relative;
-        height: 150vh !important;
-        width: 100%;
-        background-attachment: fixed;
-        transition: .5s;
-    }
-}
-
 .mcon-3 {
     position: relative;
     height: 142vh;
@@ -355,6 +390,17 @@ body {
     background-attachment: fixed;
     transition: .5s;
 }
+
+@media only screen and (max-device-height: 568px) {
+    .mcon-3 {
+        position: relative;
+        height: 150vh;
+        width: 100%;
+        background-attachment: fixed;
+        transition: .5s;
+    }
+  }
+
 
 .meventintro {
     top: 8vh;
@@ -393,6 +439,53 @@ body {
     border-bottom: 2px solid white;
     padding-bottom: 4px;
 }
+
+@media only screen and (max-device-height: 568px) {
+    .event-recap {
+        position: relative;
+        margin-left: 8vw;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: .8rem;
+        margin-top: 18vh;
+        width: 80vw;
+        line-height: 2rem;
+    }
+
+    .ptmevent {
+        position: relative;
+        color: white;
+        margin-left: 8vw;
+        font-family: 'Ubuntu', sans-serif;
+        top: 2vh ;
+        border-bottom: 2px solid white;
+        padding-bottom: 4px;
+    }
+}
+
+@media only screen and (min-device-height: 569px) and (max-device-height: 640px) {
+    .event-recap {
+        position: relative;
+        margin-left: 8vw;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: .8rem;
+        margin-top: 18vh;
+        width: 80vw;
+        line-height: 2rem;
+    }
+
+    .ptmevent {
+        position: relative;
+        color: white;
+        margin-left: 8vw;
+        font-family: 'Ubuntu', sans-serif;
+        top: 5vh ;
+        border-bottom: 2px solid white;
+        padding-bottom: 4px;
+    }
+}
+
 
 .triggerbg.changecolor {
     background-color: #1a172a;
