@@ -155,6 +155,10 @@
         opacity: 0;
     }
 
+    #vslogan-events {
+        opacity: 0;
+    }
+
     .social-media {
         position: absolute;
         bottom: 4vh;
@@ -182,6 +186,10 @@
     }
 
     #social-media5 {
+        opacity: 0;
+    }
+
+    #social-media-events {
         opacity: 0;
     }
 
@@ -217,6 +225,9 @@
         opacity: 0;
     }
 
+    #language-events {
+        opacity: 0;
+    }
 
     #vi:hover {
         cursor: pointer;
@@ -610,6 +621,35 @@
     -webkit-transform-origin: top bottom;
     -moz-transform-origin: top bottom;
     -ms-transform-origin: top bottom; */
+    }
+
+    #arrow-action3 {
+        position: absolute;
+        width: 4vw;
+        transition: .15s;
+        z-index: 100;
+        right: 2vw;
+        top: 49%;
+        opacity: 0;
+        transform: translateX(0vw);
+        -webkit-transform: translateX(0vw);
+        -o-transform: translateX(0vw);
+        -moz-transform: translateX(0vw);
+        -ms-transform: translateX(0vw);
+    }
+
+    #arrow-action3:hover {
+        transform: translateX(1vh);
+        -webkit-transform: translateX(1vh);
+        -o-transform: translateX(1vh);
+        -moz-transform: translateX(1vh);
+        -ms-transform: translateX(1vh);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    #con-events-details {
+        display: none;
     }
 
     #con5 {
