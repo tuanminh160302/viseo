@@ -71,6 +71,9 @@
     -webkit-appearance: none;
     border-radius: 0;
     padding: 0 5px 0 5px;
+    background-color: white;
+    border-style: none;
+    border: 1px solid gray;
 }
 
 #copyright {
@@ -112,7 +115,7 @@
         height: 2.5rem;
         width: 60%;
         color: white;
-        background-color: #1a172a;
+        background-color: #1a172a !important;
         border: 0;
         font-size: 1rem;
         border-radius: 0%;

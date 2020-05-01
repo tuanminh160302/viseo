@@ -43,6 +43,8 @@ header > #tabs {
 }
 
 input {
+    -webkit-appearance: none;
+    border-radius: 0;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
