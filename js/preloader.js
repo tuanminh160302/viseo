@@ -1,3 +1,3 @@
-$(window).delay(3000).load(function() {
+$(window).load(function() {
     $('.preloader').fadeOut('slow');
  });
