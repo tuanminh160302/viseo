@@ -182,18 +182,9 @@
 }
 
 .recaptcha {
-    -webkit-transform-origin: 0 0;
-    transform-origin: 0 0;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     -webkit-transform: scale(0.68);
     /* scale recaptcha image to fit */
     transform: scale(0.68);
-}
-
-#rc-imageselect {
-    position: fixed !important;
-    height: 65% !important;
-    width: auto;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%);
 }
