@@ -180,3 +180,8 @@
         font-size: .9rem;
     }
 }
+
+.recaptcha {
+    width: 80%;
+    height: auto;
+}
