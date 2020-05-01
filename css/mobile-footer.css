@@ -57,6 +57,9 @@
     border: 0;
     font-size: 1.12rem;
     border-radius: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subscribe input {
