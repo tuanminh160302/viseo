@@ -43,6 +43,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
 }
 
 #pre-gallery-img-frame-2 {
@@ -51,6 +52,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
 }
 
 #pre-gallery-img-frame-3 {
@@ -59,6 +61,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: block;
 }
 
 .pre-gallery-img-frame-name-p {
