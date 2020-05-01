@@ -4,7 +4,6 @@ var scene = new ScrollMagic.Scene({
     triggerElement: '.ptmcon-2',
     triggerHook: 0,
 })
-scene.addIndicators()
 scene.setClassToggle('.triggerbg', 'changecolor') //#1a172a
 scene.addTo(controller);
 
