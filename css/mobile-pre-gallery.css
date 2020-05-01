@@ -1,4 +1,12 @@
-html, body, #mobile {
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+#mobile {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -93,6 +101,7 @@ html, body, #mobile {
     left: 50%;
     transform: translateX(-50%);
     top: 114vh;
+    margin-bottom: 3.5vh;
 }
 
 .mobile-pre-gallery {
