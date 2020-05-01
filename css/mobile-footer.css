@@ -184,7 +184,13 @@
 .recaptcha {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
-    -webkit-transform: scale(0.68);
+    -webkit-transform: scale(0.75);
     /* scale recaptcha image to fit */
-    transform: scale(0.4);
+    transform: scale(0.75);
+}
+
+#rc-imageselect {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;-webkit-transform-origin:0 0;
 }
