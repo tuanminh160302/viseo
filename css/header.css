@@ -18,7 +18,7 @@ header {
     height: 8vh;
     width: 8vh;
     z-index: 11;
-    background-image: url(https://i.imgur.com/5046qxI.png);
+    background-image: url(/img/logo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

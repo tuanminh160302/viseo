@@ -7,10 +7,16 @@
     <title>Gallery: Tu Dien LGBTQ+</title>
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/gallery-3.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/preloader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="preloader"><img src="img/logo.png" alt="">
+        <h1>Loading Gallery</h1>
+        <h2>Please wait</h2>
+    </div>
+
     <div class="non-touch-slider-items">
         <div id="pop-up-slider-items" class="pop-up-slider-items">
             <img id="pop-up-slider-items-img" class="pop-up-slider-items-img" src="" alt="">
@@ -58,6 +64,7 @@
 
     <script src="js/gallery-3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/preloader.js"></script>
 </body>
 
 </html>
