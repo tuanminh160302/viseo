@@ -1,5 +1,3 @@
-@media only screen and (min-device-width: 1024px) {
-
     html,
     body {
         height: 100%;
@@ -7,21 +5,26 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: transparent;
-        overflow: hidden;
+        background-color: #ebebeb;
+        overflow-x: hidden;
     }
 
+    .home-footer {
+        width: 77vw;
+        height: 30vh;
+        margin: 0 0 0 23vw;
+        padding: 0;
+        background-color: #ebebeb;
+    }
 
-    #container-img {
-        position: absolute;
-        /* filter: blur(2.7px);
-    -webkit-filter: blur(2.7px); */
+    .grand-container {
+        margin: 0;
+        padding: 0;
+        height: 330vh;
         width: 100vw;
-        height: 90vh;
-        background-image: url(/img/NBYTrungQuoc.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: row;
     }
 
     .container {
@@ -35,6 +38,16 @@
         background-color: #ebebeb;
         display: flex;
         flex-direction: row;
+    }
+
+    .grand-container>.panel1 {
+        margin: 0;
+        padding: 0;
+        height: 330vh;
+        width: 23vw;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
     }
 
     .container>.panel1 {
@@ -55,74 +68,8 @@
         transform: translateX(28vw);
     }
 
-    @-webkit-keyframes rotating
-
-    /* Safari and Chrome */
-        {
-        from {
-            -webkit-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-        }
-
-        to {
-            -webkit-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes rotating {
-        from {
-            -ms-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-        }
-
-        to {
-            -ms-transform: rotate(360deg);
-            -moz-transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            transform: rotate(360deg);
-        }
-    }
-
-    #circle {
-        position: absolute;
-        height: 69.45vh;
-        width: 69.45vh;
-        margin-top: 15.275vh;
-        margin-bottom: 15.275vh;
-        background: #1a172a;
-        left: 13.3vw;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        -webkit-box-shadow: 15px 21px 33px 6px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 15px 21px 33px 6px rgba(0, 0, 0, 0.75);
-        box-shadow: 15px 21px 33px 6px rgba(0, 0, 0, 0.75);
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        transform: translateX(0vw);
-        animation: rotating 10s linear infinite;
-        -webkit-animation: rotating 10s linear infinite;
-        -moz-animation: rotating 10s linear infinite;
-        -ms-animation: rotating 10s linear infinite;
-        -o-animation: rotating 10s linear infinite;
-    }
-
-    #circle img {
-        height: 80%;
-        margin-top: 15%;
-        opacity: .7;
-    }
-
     .vslogan {
-        position: absolute;
+        position: fixed;
         width: 100vh;
         transform: rotate(-90deg);
         -webkit-transform: rotate(-90deg);
@@ -135,30 +82,6 @@
         font-weight: 900;
     }
 
-    #vslogan {
-        opacity: 1;
-    }
-
-    #vslogan2 {
-        opacity: 0;
-    }
-
-    #vslogan3 {
-        opacity: 0;
-    }
-
-    #vslogan4 {
-        opacity: 0;
-    }
-
-    #vslogan5 {
-        opacity: 0;
-    }
-
-    #vslogan-events {
-        opacity: 0;
-    }
-
     .social-media {
         position: absolute;
         bottom: 4vh;
@@ -167,30 +90,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    #social-media {
-        opacity: 1;
-    }
-
-    #social-media2 {
-        opacity: 0;
-    }
-
-    #social-media3 {
-        opacity: 0;
-    }
-
-    #social-media4 {
-        opacity: 0;
-    }
-
-    #social-media5 {
-        opacity: 0;
-    }
-
-    #social-media-events {
-        opacity: 0;
     }
 
     .language {
@@ -203,30 +102,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-
-    #language {
-        opacity: 1;
-    }
-
-    #language2 {
-        opacity: 0;
-    }
-
-    #language3 {
-        opacity: 0;
-    }
-
-    #language4 {
-        opacity: 0;
-    }
-
-    #language5 {
-        opacity: 0;
-    }
-
-    #language-events {
-        opacity: 0;
     }
 
     #vi:hover {
@@ -271,7 +146,6 @@
         background-color: black;
     }
 
-
     .container>.panel2 {
         margin: 0;
         padding: 0;
@@ -282,99 +156,13 @@
         flex-direction: row;
     }
 
-    #brand {
-        position: absolute;
-        font-size: 5em;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 100;
-        color: white;
-        top: 20.275vh;
-        left: 60vw;
-        margin: 0 !important;
-    }
-
-    #brand-hr {
-        position: absolute;
-        width: 29vw;
-        top: 34vh;
-        left: 60vw;
-        height: 1px;
-    }
-
-    #brand-exp {
-        position: absolute;
-        width: 27.25vw;
-        height: 6vh;
-        color: white;
-        left: 60vw;
-        top: 36vh;
+    .grand-container>.panel2 {
         margin: 0;
-        opacity: 1;
-        font-size: 1.1em;
-        font-weight: bold;
-        line-height: 40px;
-        padding: 0 3% 0 0;
+        padding: 0;
+        height: 330vh;
+        width: 77vw;
+        background-color: #201c37;
     }
-
-    #brand-exp2 {
-        position: absolute;
-        width: 27.25vw;
-        height: 30vh;
-        color: white;
-        left: 60vw;
-        top: 45vh;
-        line-height: 250%;
-        margin: 0;
-        font-style: italic;
-        font-weight: 500;
-    }
-
-    #view-events {
-        opacity: 0;
-    }
-
-    #icon-viewall {
-        height: 2.5vh;
-        width: auto;
-    }
-
-    .viewall {
-        position: absolute;
-        bottom: 3vh;
-        left: 60vw;
-        width: auto;
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        transition: .15s;
-    }
-
-    .viewall:hover {
-        transition: .3s;
-        transform: translateY(1vh);
-    }
-
-    .viewall a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-family: 'Ubuntu', sans-serif;
-        height: 3vh;
-        width: auto;
-        margin-left: 1vw;
-    }
-
-    .viewall a:hover {
-        cursor: pointer;
-    }
-
-    .viewall img:hover {
-        cursor: pointer;
-    }
-
 
     /* GALLERY DECENT UI */
 
@@ -384,7 +172,7 @@
     }
 
     #con2 {
-        display: none;
+        display: flex;
     }
 
     #con2 .panel2 {
@@ -463,34 +251,8 @@
         justify-content: center;
     }
 
-
-    #arrow-action2 {
-        position: absolute;
-        width: 4vw;
-        transition: .15s;
-        z-index: 100;
-        right: 2vw;
-        top: 49%;
-        opacity: 0;
-        transform: translateX(0vw);
-        -webkit-transform: translateX(0vw);
-        -o-transform: translateX(0vw);
-        -moz-transform: translateX(0vw);
-        -ms-transform: translateX(0vw);
-    }
-
-    #arrow-action2:hover {
-        transform: translateX(1vh);
-        -webkit-transform: translateX(1vh);
-        -o-transform: translateX(1vh);
-        -moz-transform: translateX(1vh);
-        -ms-transform: translateX(1vh);
-        transition: .3s;
-        cursor: pointer;
-    }
-
     #con3 {
-        display: none;
+        display: flex;
     }
 
     #con3 .panel2 {
@@ -574,11 +336,11 @@
     }
 
     ::-webkit-scrollbar-track {
-        background: #1a172a;
+        background: #ebebeb;
     }
 
     ::-webkit-scrollbar-thumb {
-        background: #ebebeb;
+        background: #201c37;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -648,12 +410,9 @@
         cursor: pointer;
     }
 
-    #con-events-details {
-        display: none;
-    }
 
     #con5 {
-        display: none;
+        display: flex;
     }
 
     #con5 .panel1 {}
@@ -666,7 +425,6 @@
     .contacts-contents {
         width: 75%;
         height: 50%;
-        opacity: 0;
     }
 
     .contacts-contents img {
@@ -704,173 +462,171 @@
     #contact-fb h3 {
         margin-bottom: 1em;
     }
-}
-
-.events-items {
-    height: 25vh;
-    width: 20vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    border: 1px solid #ebebeb;
-    cursor: pointer;
-}
-
-#events-items-1 {
-    background-image: url(/img/17.jpg);
-    margin-top: 22vh;
-    margin-left: 12vw;
-}
-
-#events-items-2 {
-    background-image: url(/img/comingsoon.jpg);
-    margin-top: 22vh;
-    margin-left: 43vw;
-}
-
-#events-items-3 {
-    background-image: url(/img/comingsoon.jpg);
-    margin-top: 60vh;
-    margin-left: 12vw;
-}
-
-#events-items-4 {
-    background-image: url(/img/comingsoon.jpg);
-    margin-top: 60vh;
-    margin-left: 43vw;
-}
-
-#events-items-1-name {
-    position: absolute;
-    width: 20vw;
-    height: auto;
-    text-align: center;
-    margin-left: 12vw;
-    margin-top: 50vh;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    cursor: pointer;
-}
-
-.events-details {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 5;
-    background-color: #1a172a;
-    transform: scaleX(0);
-    transform-origin: right;
-    display: flex;
-    flex-direction: row;
-}
-
-.events-details-panel-1 {
-    height: 100vh;
-    width: 45vw;
-    display: none;
-    opacity: 0;
-}
-
-.events-details-panel-2 {
-    height: 100vh;
-    width: 55vw;
-    display: flex;
-    flex-direction: column;
-    display: none;
-    opacity: 0;
-}
-
-#events-details-back-btn {
-    color: #ebebeb;
-    font-family: 'Ubuntu', sans-serif;
-    position: absolute;
-    margin-top: 15vh;
-    margin-left: 3.8vw;
-    font-size: 1.3em;
-    font-weight: bold;
-    cursor: pointer;
-    border-bottom: 1px solid #ebebeb;
-    padding-bottom: 1px;
-}
-
-#events-details-p {
-    color: #ebebeb;
-    font-family: 'Ubuntu', sans-serif;
-    position: absolute;
-    margin-top: 25vh;
-    margin-left: 10vw;
-    font-size: 1.2em;
-    font-weight: lighter;
-    cursor: pointer;
-    width: 30vw;
-    line-height: 2em;
-}
-
-#events-details-guests-label {
-    width: 100%;
-    height: 5vh;
-    text-align: center;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2em;
-    margin-top: 25vh;
-}
-
-.events-details-guests {
-    margin-top: 0vh;
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.guests-frame {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.guests-frame p {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.guest-img {
-    height: 12vh;
-    width: 12vh;
-    border-radius: 50%;
-}
-
-#guest1 {
-    background-image: url(/img/hana.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#guest2 {
-    background-image: url(/img/hana.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#guest3 {
-    background-image: url(/img/hana.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#guest4 {
-    background-image: url(/img/hana.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 
+    .events-items {
+        height: 25vh;
+        width: 20vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        border: 1px solid #ebebeb;
+        cursor: pointer;
+    }
+
+    #events-items-1 {
+        background-image: url(/img/17.jpg);
+        margin-top: 22vh;
+        margin-left: 12vw;
+    }
+
+    #events-items-2 {
+        background-image: url(/img/comingsoon.jpg);
+        margin-top: 22vh;
+        margin-left: 43vw;
+    }
+
+    #events-items-3 {
+        background-image: url(/img/comingsoon.jpg);
+        margin-top: 60vh;
+        margin-left: 12vw;
+    }
+
+    #events-items-4 {
+        background-image: url(/img/comingsoon.jpg);
+        margin-top: 60vh;
+        margin-left: 43vw;
+    }
+
+    #events-items-1-name {
+        position: absolute;
+        width: 20vw;
+        height: auto;
+        text-align: center;
+        margin-left: 12vw;
+        margin-top: 50vh;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        cursor: pointer;
+    }
+
+    .events-details {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 5;
+        background-color: #1a172a;
+        transform: scaleX(0);
+        transform-origin: right;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .events-details-panel-1 {
+        height: 100vh;
+        width: 45vw;
+        display: none;
+        opacity: 0;
+    }
+
+    .events-details-panel-2 {
+        height: 100vh;
+        width: 55vw;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        opacity: 0;
+    }
+
+    #events-details-back-btn {
+        color: #ebebeb;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        margin-top: 15vh;
+        margin-left: 3.8vw;
+        font-size: 1.3em;
+        font-weight: bold;
+        cursor: pointer;
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 1px;
+    }
+
+    #events-details-p {
+        color: #ebebeb;
+        font-family: 'Ubuntu', sans-serif;
+        position: absolute;
+        margin-top: 25vh;
+        margin-left: 10vw;
+        font-size: 1.2em;
+        font-weight: lighter;
+        cursor: pointer;
+        width: 30vw;
+        line-height: 2em;
+    }
+
+    #events-details-guests-label {
+        width: 100%;
+        height: 5vh;
+        text-align: center;
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2em;
+        margin-top: 25vh;
+    }
+
+    .events-details-guests {
+        margin-top: 0vh;
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .guests-frame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .guests-frame p {
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .guest-img {
+        height: 12vh;
+        width: 12vh;
+        border-radius: 50%;
+    }
+
+    #guest1 {
+        background-image: url(/img/hana.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #guest2 {
+        background-image: url(/img/hana.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #guest3 {
+        background-image: url(/img/hana.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #guest4 {
+        background-image: url(/img/hana.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
