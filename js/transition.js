@@ -36,6 +36,7 @@ document.getElementById('pg').addEventListener('click', function () {
     TweenMax.to('#con1', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con2', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con3', 0, { delay: 2, display: 'flex' });
+    TweenMax.to('#con-events-details', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con4', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con5', 0, { delay: 2, display: 'none' });
     TweenMax.to('.video-tabs', 0, { delay: 2, color: '#ebebeb' });
@@ -81,6 +82,7 @@ document.getElementById('events').addEventListener('click', function () {
     TweenMax.to('#con2', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con3', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con4', 0, { delay: 2, display: 'none' });
+    TweenMax.to('#con5', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con-events-details', 0, { delay: 2, display: 'flex' });
     TweenMax.to('.video-tabs', 0, { delay: 2, color: 'white' });
     TweenMax.to('input', 0, { delay: 2, borderBottom: 'solid white', color: 'white' });
@@ -200,6 +202,7 @@ document.getElementById('view-contacts').addEventListener('click', function () {
     TweenMax.to('#con3', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con4', 0, { delay: 2, display: 'none' });
     TweenMax.to('#con5', 0, { delay: 2, display: 'flex' });
+    TweenMax.to('#con-events-details', 0, { delay: 2, display: 'none' });
     TweenMax.to('.video-tabs', 0, { delay: 2, color: 'white' });
     TweenMax.to('input', 0, { delay: 2, borderBottom: 'solid white', color: 'white' });
 });
@@ -290,3 +293,22 @@ document.getElementById('arrow-action3').addEventListener('click', function () {
     TweenMax.to('.video-tabs', 0, { delay: 2, color: 'white' });
     TweenMax.to('input', 0, { delay: 2, borderBottom: 'solid white', color: 'white' });
 });
+
+document.getElementById('events-items-1').addEventListener('click', function() {
+    TweenMax.to('.events-details', 1.5, { scaleX: 1, ease: Power4.easeOut });
+    TweenMax.to('.events-details-panel-1', 0, { delay: 1.6, display: 'block' });
+    TweenMax.to('.events-details-panel-2', 0, { delay: 1.6, display: 'flex' });
+    TweenMax.to('.events-details-panel-1', 0.4, { delay: 1.7, opacity: 1 });
+    TweenMax.to('.events-details-panel-2', 0.4, { delay: 1.7, opacity: 1 });
+})
+
+
+
+
+document.getElementById('events-details-back-btn').addEventListener('click', function() {
+    TweenMax.to('.events-details', 1.5, { delay: 0.5, scaleX: 0, ease: Power4.easeOut  });
+    TweenMax.to('.events-details-panel-1', 0, { delay: 0.45, display: 'block' });
+    TweenMax.to('.events-details-panel-2', 0, { delay: 0.45, display: 'flex' });
+    TweenMax.to('.events-details-panel-1', 0.4, { opacity: 0 });
+    TweenMax.to('.events-details-panel-2', 0.4, { opacity: 0 });
+})

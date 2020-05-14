@@ -704,11 +704,173 @@
     #contact-fb h3 {
         margin-bottom: 1em;
     }
-
-
-
-
-
-
-
 }
+
+.events-items {
+    height: 25vh;
+    width: 20vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+}
+
+#events-items-1 {
+    background-image: url(/img/17.jpg);
+    margin-top: 22vh;
+    margin-left: 12vw;
+}
+
+#events-items-2 {
+    background-image: url(/img/comingsoon.jpg);
+    margin-top: 22vh;
+    margin-left: 43vw;
+}
+
+#events-items-3 {
+    background-image: url(/img/comingsoon.jpg);
+    margin-top: 60vh;
+    margin-left: 12vw;
+}
+
+#events-items-4 {
+    background-image: url(/img/comingsoon.jpg);
+    margin-top: 60vh;
+    margin-left: 43vw;
+}
+
+#events-items-1-name {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    text-align: center;
+    margin-left: 12vw;
+    margin-top: 50vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+
+.events-details {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+    background-color: #1a172a;
+    transform: scaleX(0);
+    transform-origin: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.events-details-panel-1 {
+    height: 100vh;
+    width: 45vw;
+    display: none;
+    opacity: 0;
+}
+
+.events-details-panel-2 {
+    height: 100vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+}
+
+#events-details-back-btn {
+    color: #ebebeb;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    margin-top: 15vh;
+    margin-left: 3.8vw;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 1px;
+}
+
+#events-details-p {
+    color: #ebebeb;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: 10vw;
+    font-size: 1.2em;
+    font-weight: lighter;
+    cursor: pointer;
+    width: 30vw;
+    line-height: 2em;
+}
+
+#events-details-guests-label {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-top: 25vh;
+}
+
+.events-details-guests {
+    margin-top: 0vh;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.guests-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.guests-frame p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.guest-img {
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+}
+
+#guest1 {
+    background-image: url(/img/hana.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#guest2 {
+    background-image: url(/img/hana.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#guest3 {
+    background-image: url(/img/hana.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#guest4 {
+    background-image: url(/img/hana.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
